@@ -2,9 +2,9 @@
 
 <%= form_with model: User.new do |form| %>
   <%= form.label :username, "Type your username"%>:
-  <%= form.text_field :username, placeholder: "Your user name here" %>
-  <%= form.label :email, "Type your email" %>:
-  <%= form.email_field :email, placeholder: "Your email here" %>
+  <%= form.text_field :username, placeholder: "Your user name here", value: "Name" %>
+  <%= form.label :email, "Type your email"  %>:
+  <%= form.email_field :email, placeholder: "Your email here", value: "email@email.com" %>
   <%= form.label :password, "Type your password" %>:
   <%= form.password_field :password, placeholder: "Your password here" %>
   <%= form.submit %>
