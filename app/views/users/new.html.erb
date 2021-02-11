@@ -1,11 +1,11 @@
 <h1>Form</h1>
 
 <%= form_with model: User.new do |form| %>
-  <%= form.label :username%>:
+  <%= form.label :username, "Type your username"%>:
   <%= form.text_field :username, placeholder: "Your user name here" %>
-  <%= form.label :email %>:
+  <%= form.label :email, "Type your email" %>:
   <%= form.email_field :email, placeholder: "Your email here" %>
-  <%= form.label :password %>:
+  <%= form.label :password, "Type your password" %>:
   <%= form.password_field :password, placeholder: "Your password here" %>
   <%= form.submit %>
 <% end %>
