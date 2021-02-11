@@ -8,8 +8,11 @@ with only one table we got the job done.
 - user table store user info.
 
 ## Usage
-- Clone the repo: git clone 
-- run `rails db:migrate` to migrate the database
+- Clone the repo: git clone
+- Open up the terminal
+- Move inside the repo you just clone. The code to do that is: `cd /the_path_where_you_clone_the_repo`.
+- Make sure your inside the rails_form folder ?!!! 
+- Inside the folder, run `rails db:migrate` to migrate the database.
 - Type `rails s` to run the server
 - On your browser go to `localhost:3000/users/new` to create a new user
 - On your browser go to `localhost:3000/users/1/edit` to update the user you created. The `1` is the id of the first user change it to match the user you want to update.
