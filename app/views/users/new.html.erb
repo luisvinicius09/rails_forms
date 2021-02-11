@@ -1,11 +1,11 @@
 <h1>Form</h1>
-<form action="/users" method="POST" >
-  <label for="username">Username</label>
-  <input type="text" id="username" name="user[username]">
-  <label for="email">Email</label>
-  <input type="email" id="email" name="user[email]">
-  <label for="password">Password</label>
-  <input type="password" id="password" name="user[password]">
-  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-  <input type="submit">
-</form>
+
+<%= form_with model: User.new do |form| %>
+  <%= form.label :username%>:
+  <%= form.text_field :username, placeholder: "Your user name here" %>
+  <%= form.label :email %>:
+  <%= form.email_field :email, placeholder: "Your email here" %>
+  <%= form.label :password %>:
+  <%= form.password_field :password, placeholder: "Your password here" %>
+  <%= form.submit %>
+<% end %>
