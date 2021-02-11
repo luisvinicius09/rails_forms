@@ -1,76 +1,50 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
+# Rails Form
+This project is the creation of the model and view base for a user form application.
 
-# Project Name
+## About
+In this project, we build the model and view for a form application with all the migrations needed.
+with only one table we got the job done.
+- user table store user info.
 
-> One paragraph statement about the project.
+## Usage
+- Clone the repo: git clone 
+- run `rails db:migrate` to migrate the database
+- Type `rails s` to run the server
+- On your browser go to `localhost:3000/users/new` to create a new user
+- On your browser go to `localhost:3000/users/1/edit` to update the user you created. The `1` is the id of the first user change it to match the user you want to update.
+- Now you are ready to add users, and update users as you please.
 
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
-
-## Built With
-
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+## Technologies and tools
+- Ruby
+- ROR
+- SQLite3
+- VScode & CLI
 
 ## Authors
 
-👤 **Author1**
+👤 **Widzmarc Jean Nesly Phelle**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- GitHub: [@widzthedvloper](https://github.com/widzthedvloper)
+- Twitter: [@widzthedvloper](https://twitter.com/widzthedvloper)
+- LinkedIn: [@widzthedvloper](https://www.linkedin.com/in/widzmarc-jean-nesly-phelle-252a26129/)
 
-👤 **Author2**
+👤 **Luis Vinicius**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- GitHub: [@luisvinicius09](https://github.com/luisvinicius09)
+- Twitter: [@luisvinicius09]()
+- LinkedIn: [LinkedIn](https://linkedin.com/in/luis-vinicius)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/abdulkhaliqdev/Tic-Tac-Toe/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+This project is [MIT](/LICENSE) licensed.
