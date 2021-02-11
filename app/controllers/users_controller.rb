@@ -21,9 +21,9 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
 
     if @user.update(user_parms)
-      render :edit
+      print 'User saved!'
     else
-      render :edit
+      print 'User not saved!'
     end
   end
 
