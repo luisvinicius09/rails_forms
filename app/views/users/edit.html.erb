@@ -1,6 +1,6 @@
 <h1>Edit</h1>
 
-<%= form_with do |form| %>
+<%= form_with model: @user do |form| %>
   <%= form.label :username, "Type your username"%>:
   <%= form.text_field :username, placeholder: "Your user name here", value: "Name" %>
   <%= form.label :email, "Type your email"  %>:
