@@ -3,9 +3,18 @@
 <%= form_with model: User.new do |form| %>
   <%= form.label :username, "Type your username"%>:
   <%= form.text_field :username, placeholder: "Your user name here", value: "Name" %>
+  <% @user.errors.full_messages_for(:username).each do |message|%>
+    <div><%= message %></div>
+  <% end %>
   <%= form.label :email, "Type your email"  %>:
   <%= form.email_field :email, placeholder: "Your email here", value: "email@email.com" %>
+  <% @user.errors.full_messages_for(:email).each do |message| %>
+    <div><%= message %></div>
+  <% end %>
   <%= form.label :password, "Type your password" %>:
   <%= form.password_field :password, placeholder: "Your password here" %>
+  <% @user.errors.full_messages_for(:password).each do |message| %>
+    <div><%= message %></div>
+  <% end %>
   <%= form.submit %>
 <% end %>
